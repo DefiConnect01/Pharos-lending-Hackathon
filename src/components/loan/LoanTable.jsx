@@ -12,7 +12,7 @@ const LoanTable = () => {
   return (
     <div className="m-5 overflow-x-auto min-h-[400px]">
       <div className="flex justify-start mb-8 mt-2">
-        <NavigateButton text="Create Loan" link="/loan" icon={<FiPlusSquare />} />
+        <NavigateButton text="Create Loan" link="/Rwa-loan" icon={<FiPlusSquare />} />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">

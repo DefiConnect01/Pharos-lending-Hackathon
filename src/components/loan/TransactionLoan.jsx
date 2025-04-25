@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import { useAppKitAccount } from "@reown/appkit/react";
 import LoanDate from "./LoanDate";
 import LoanInput from "./LoanInput";
+import CollateralInput from "./CollateralInput";
 import { Link } from "react-router-dom";
 import { GiReturnArrow } from "react-icons/gi";
 import moment from "moment";
@@ -165,6 +166,12 @@ const TransactionLoan = () => {
                 onTokenSelect={setSelectedFromToken}
                 />
               <div className="my-4"></div>
+              <CollateralInput
+            setLoanValue={setLoanValue}
+            selectedToken={selectedToToken}
+            loanValue={loanValue}
+          />
+          <div className="my-4"></div>
             <LoanExchange
                 label="Loan Token"
                 selectedToken={selectedToToken}
