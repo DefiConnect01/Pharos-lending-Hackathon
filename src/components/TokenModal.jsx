@@ -126,7 +126,7 @@ const SelectTokenModal = ({
           }
           // Add fallback logo for tokens without logoURI
           else if (!updatedToken.logoURI) {
-            updatedToken.logoURI = "/creator.png";
+            updatedToken.logoURI = "";
           }
 
           return updatedToken;
@@ -241,7 +241,8 @@ const SelectTokenModal = ({
 
           <div className="max-h-[60vh] overflow-y-auto">
             <div className="flex flex-col gap-2">
-              {filteredTokens.map((token) => (
+              {/* {filteredTokens.map((token) => ( */}
+              {tokenList.map((token) => (
                 <TokenWithBalance
                   key={token.address}
                   token={token}
